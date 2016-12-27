@@ -55,7 +55,7 @@ $.extend( true, DataTable.defaults, {
 
 /* Default class modification */
 $.extend( DataTable.ext.classes, {
-	sWrapper:      "dataTables_wrapper form-inline dt-bootstrap",
+	sWrapper:      "dataTables_wrapper dt-bootstrap",
 	sFilterInput:  "form-control form-control-sm input-sm",
 	sLengthSelect: "form-control form-control-sm input-sm",
 	sProcessing:   "dataTables_processing panel panel-default card card-block"
@@ -156,7 +156,7 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 	};
 
 	// IE9 throws an 'unknown error' if document.activeElement is used
-	// inside an iframe or frame. 
+	// inside an iframe or frame.
 	var activeEl;
 
 	try {
